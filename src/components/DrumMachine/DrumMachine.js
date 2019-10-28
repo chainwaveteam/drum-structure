@@ -1,26 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-// import { data } from '../../data'
 import { Background, Wrapper } from './style'
 import Keyboard from '../Keyboard/Keyboard'
 import Dashboard from '../Dashboard/Dashboard'
-
-// const { letters, audios } = data
-
-// const getAudio = name => {
-//   const regex = new RegExp(name, 'g')
-//   return audios.filter(src => src.match(regex))[0]
-// }
+import Player from './Player'
 
 function DrumMachine() {
   const initialScreen = '- - - -'
+  const INIT = 'INIT'
   const [display, setDisplay] = useState(initialScreen)
+  const [src, setSrc] = useState(INIT)
   const [bank, setBank] = useState(0)
   const [isOn, setIsOn] = useState(true)
 
-  if (display !== initialScreen && !isOn) setDisplay(initialScreen)
+  const play = touch => {
+    const key = touch.labels[bank]
+    const url = touch.sources[bank]
+    if (src && url !== src) {
+      setDisplay(isOn ? key : initialScreen)
+      setSrc(url)
+      setTimeout(() => setSrc(INIT), 10)
+    }
+  }
 
-  const play = touch => setDisplay(touch.labels[bank])
+  // Init on on/off
+  useEffect(() => {
+    setDisplay(initialScreen)
+    setSrc(INIT)
+  }, [isOn])
 
   return (
     <Background>
@@ -29,8 +36,10 @@ function DrumMachine() {
           display={display}
           handleBank={bool => setBank(bool ? 1 : 0)}
           handleRun={bool => setIsOn(bool)}
+          isOn={isOn}
         />
         <Keyboard onPressOn={play} isOn={isOn} />
+        <Player url={src} volume={isOn ? 1 : 0} />
       </Wrapper>
     </Background>
   )

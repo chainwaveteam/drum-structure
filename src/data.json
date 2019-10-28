@@ -1,35 +1,103 @@
 {
-    "data": {
-        "letters": [
-            {"letter": "Q", "code" :  81, "labels": ["KICK", "LA-NATIVE"]},
-            {"letter": "W", "code" :  87, "labels": ["SNARE", "DASH-RUNNER"]},
-            {"letter": "E", "code" :  69, "labels": ["COWBELL", "RETRO-2"]},
-            {"letter": "A", "code" :  65, "labels": ["HIHAT1", "DETECTIVE"]},
-            {"letter": "S", "code" :  83, "labels": ["CYMBAL", "FAST-ACE"]},
-            {"letter": "D", "code" :  68, "labels": ["TOMTOM", "ARCADE-FUNK"]},
-            {"letter": "Z", "code" :  90, "labels": ["HIHAT4", "RETRO-GAP"]},
-            {"letter": "X", "code" :  88, "labels": ["CHINA", "ANDROIDS"]},
-            {"letter": "C", "code" :  67, "labels": ["RIDE", "DUCKY"]}
-        ],
-        "audios": [
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/kick.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/la-native.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/snare.wav",
-            "http://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/dash-runner.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/cowbell.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254302/drum-machine/retro-2.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/hihat1.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254300/drum-machine/detective.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/cymbal.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254300/drum-machine/fast-ace.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657706/drum-machine/tomtom.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254298/drum-machine/arcade-funk.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657706/drum-machine/hihat4.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/retro-gap.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657708/drum-machine/china.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254299/drum-machine/androids.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/ride.wav",
-            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254297/drum-machine/ducky.wav"
+  "data": {
+    "letters": [
+      {
+        "letter": "Q",
+        "code": 81,
+        "labels": ["Blast", "Chord 1"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/BLAST.wav",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord1.wav"
         ]
-    }
+      },
+      {
+        "letter": "W",
+        "code": 87,
+        "labels": ["Horn 1", "Chord 2"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN1.wav",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord2.wav"
+        ]
+      },
+      {
+        "letter": "E",
+        "code": 69,
+        "labels": ["Horn 2", "Lick"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN2.wav",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/lick.wav"
+        ]
+      },
+      {
+        "letter": "A",
+        "code": 65,
+        "labels": ["Pad 1", "Gub Kick"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Kick2.wav"
+        ]
+      },
+      {
+        "letter": "S",
+        "code": 83,
+        "labels": ["HH", "HH"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV"
+        ]
+      },
+      {
+        "letter": "D",
+        "code": 68,
+        "labels": ["Pad 2", "Clap"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD2.wav",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Clap%207Mile.wav"
+        ]
+      },
+      {
+        "letter": "Z",
+        "code": 90,
+        "labels": ["Kick", "Kick"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV"
+        ]
+      },
+      {
+        "letter": "X",
+        "code": 88,
+        "labels": ["Snare", "Snare"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV"
+        ]
+      },
+      {
+        "letter": "C",
+        "code": 67,
+        "labels": ["OHat", "OHat"],
+        "sources": [
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV",
+          "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV"
+        ]
+      }
+    ],
+    "audios": [
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD2.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Clap%207Mile.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Kick2.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN2.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/lick.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN1.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord2.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/BLAST.wav",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord1.wav"
+    ]
+  }
 }

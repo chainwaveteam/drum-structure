@@ -11,19 +11,16 @@ export const Flex = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
 `
-export const FlexCol = styled(Flex)`
-  flex-direction: column;
-`
 export const Screen = styled.div`
   padding: 1rem;
-  width: calc(200px - 2rem - 6px);
-  max-width: calc(100% - 2rem - 6px);
+  width: 175px;
+  max-width: 100%;
   text-align: center;
   border: 3px solid white;
   background: black;
   font-weight: bold;
-  margin: auto auto 0 0;
-  color: white;
+  margin: 0.5rem;
+  color: ${p => (p.isOn ? 'white' : 'black')};
   font-size: 1.2rem;
   line-height: 1.2rem;
 `

@@ -6,6 +6,7 @@
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
     "babel-plugin-emotion": "^10.0.22",
+    "howler": "^2.1.2",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",

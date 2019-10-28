@@ -8,7 +8,7 @@ function Case({ letter, onClick, disabled, active }) {
     if (!disabled) onClick()
   }
   return (
-    <Touch key={letter} onClick={handleClick}>
+    <Touch key={letter} onClick={handleClick} className="drum-pad">
       <Card disabled={disabled} active={active && !disabled}>
         <span>{letter.toUpperCase()}</span>
       </Card>

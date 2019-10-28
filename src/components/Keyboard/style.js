@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
 
-import { css } from '@emotion/core'
 import { Card as CardBase, theme } from '../../theme'
 
 export const TouchList = styled.div`
@@ -47,5 +46,3 @@ export const Card = styled(CardBase)`
     transform: translate(1px, 1px);
   `}
 `
-
-// ${p => p.active && `${activeCSS};`}

@@ -27,3 +27,7 @@ export const Card = styled.div`
   font-size: 1.6rem;
   line-height: 1.6rem;
 `
+
+export const Hide = styled.div`
+  display: none;
+`
