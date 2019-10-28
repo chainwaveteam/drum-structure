@@ -1,0 +1,35 @@
+{
+    "data": {
+        "letters": [
+            {"letter": "Q", "code" :  81, "labels": ["KICK", "LA-NATIVE"]},
+            {"letter": "W", "code" :  87, "labels": ["SNARE", "DASH-RUNNER"]},
+            {"letter": "E", "code" :  69, "labels": ["COWBELL", "RETRO-2"]},
+            {"letter": "A", "code" :  65, "labels": ["HIHAT1", "DETECTIVE"]},
+            {"letter": "S", "code" :  83, "labels": ["CYMBAL", "FAST-ACE"]},
+            {"letter": "D", "code" :  68, "labels": ["TOMTOM", "ARCADE-FUNK"]},
+            {"letter": "Z", "code" :  90, "labels": ["HIHAT4", "RETRO-GAP"]},
+            {"letter": "X", "code" :  88, "labels": ["CHINA", "ANDROIDS"]},
+            {"letter": "C", "code" :  67, "labels": ["RIDE", "DUCKY"]}
+        ],
+        "audios": [
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/kick.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/la-native.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/snare.wav",
+            "http://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/dash-runner.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/cowbell.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254302/drum-machine/retro-2.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/hihat1.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254300/drum-machine/detective.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/cymbal.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254300/drum-machine/fast-ace.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657706/drum-machine/tomtom.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254298/drum-machine/arcade-funk.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657706/drum-machine/hihat4.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254303/drum-machine/retro-gap.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657708/drum-machine/china.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254299/drum-machine/androids.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1533657707/drum-machine/ride.wav",
+            "https://res.cloudinary.com/totallycurious/video/upload/q_10/v1534254297/drum-machine/ducky.wav"
+        ]
+    }
+}

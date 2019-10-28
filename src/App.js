@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import DrumMachine from './DrumMachine'
+import DrumMachine from './components/DrumMachine/DrumMachine'
 
 // Tests with freeCodeCamp
 const isDev = process.env.NODE_ENV !== 'production'
