@@ -1,33 +1,25 @@
 import React from 'react'
 
-import { data } from '../../data'
-import { Background, Wrapper, TouchList } from './style'
-import Case from '../Case/Case'
+// import { data } from '../../data'
+import { Background, Wrapper } from './style'
+import Keyboard from '../Keyboard/Keyboard'
 
-const { letters, audios } = data
+// const { letters, audios } = data
 
 // const getAudio = name => {
 //   const regex = new RegExp(name, 'g')
 //   return audios.filter(src => src.match(regex))[0]
 // }
 
-function play(letter) {
-  console.log({ letter })
-}
-
 function DrumMachine() {
+  function play(touch) {
+    console.log(touch)
+  }
+
   return (
     <Background>
       <Wrapper id="drum-machine">
-        <TouchList>
-          {letters.map(letter => (
-            <Case
-              key={letter.letter}
-              {...letter}
-              onClick={() => play(letter)}
-            />
-          ))}
-        </TouchList>
+        <Keyboard onPressOn={touch => play(touch)} />
       </Wrapper>
     </Background>
   )

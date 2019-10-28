@@ -22,10 +22,3 @@ export const Wrapper = styled.div`
   max-width: 100%;
   padding: 1rem;
 `
-
-export const TouchList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  justify-content: center;
-`

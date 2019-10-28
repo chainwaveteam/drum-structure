@@ -1,5 +1,12 @@
 import styled from '@emotion/styled'
 
+export const TouchList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+`
+
 export const Touch = styled.div`
   width: 30%;
   display: block;
