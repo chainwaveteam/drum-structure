@@ -8,17 +8,16 @@ export const Background = styled.div`
   bottom: 0;
   right: 0;
   margin: 0;
-  padding: 1rem;
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("${background}");
+  font-family: Lato, sans-serif;
+  overflow: hidden;
 `
 
 export const Wrapper = styled.div`
-  display: flex;
   margin: auto;
   max-width: 100%;
-  padding: 1rem;
 `

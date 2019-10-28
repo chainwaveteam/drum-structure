@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // import { data } from '../../data'
 import { Background, Wrapper } from './style'
 import Keyboard from '../Keyboard/Keyboard'
+import Dashboard from '../Dashboard/Dashboard'
 
 // const { letters, audios } = data
 
@@ -12,14 +13,24 @@ import Keyboard from '../Keyboard/Keyboard'
 // }
 
 function DrumMachine() {
-  function play(touch) {
-    console.log(touch)
-  }
+  const initialScreen = '- - - -'
+  const [display, setDisplay] = useState(initialScreen)
+  const [bank, setBank] = useState(0)
+  const [isOn, setIsOn] = useState(true)
+
+  if (display !== initialScreen && !isOn) setDisplay(initialScreen)
+
+  const play = touch => setDisplay(touch.labels[bank])
 
   return (
     <Background>
       <Wrapper id="drum-machine">
-        <Keyboard onPressOn={touch => play(touch)} />
+        <Dashboard
+          display={display}
+          handleBank={bool => setBank(bool ? 1 : 0)}
+          handleRun={bool => setIsOn(bool)}
+        />
+        <Keyboard onPressOn={play} isOn={isOn} />
       </Wrapper>
     </Background>
   )

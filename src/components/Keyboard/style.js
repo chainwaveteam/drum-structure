@@ -1,35 +1,51 @@
 import styled from '@emotion/styled'
 
+import { css } from '@emotion/core'
+import { Card as CardBase, theme } from '../../theme'
+
 export const TouchList = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 400px;
+  max-width: 100%;
   justify-content: center;
 `
 
 export const Touch = styled.div`
-  width: 30%;
+  width: calc(100% / 3);
   display: block;
-  background: rgba(255, 255, 255, 0.7);
-  user-select: none;
-  text-align: center;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+`
+
+export const Card = styled(CardBase)`
   padding: 2rem 0;
-  border-radius: 0.5rem;
-  margin: 0.2rem;
-  color: black;
   font-weight: bold;
-  font-family: Lato, sans-serif;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   transform: translate(0, 0);
-  transition: transform 200ms ease-in-out, background 200ms ease-in-out;
+  transition: ${theme.transition};
+
+  ${p =>
+    p.disabled
+      ? `
+  cursor: not-allowed;
+  `
+      : `
+      cursor: pointer;
   &:hover {
     transform: translate(-1px, -1px);
   }
   &:active {
     color: white;
-    background: linear-gradient(298deg, #da2c4d, #f8ab37);
+    background: ${theme.colors.variant};
     transform: translate(1px, 1px);
   }
+  `};
+
+  ${p =>
+    p.active &&
+    `
+    color: white;
+    background: ${theme.colors.variant};
+    transform: translate(1px, 1px);
+  `}
 `
+
+// ${p => p.active && `${activeCSS};`}
