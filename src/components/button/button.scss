@@ -1,0 +1,101 @@
+@import "../../variables";
+@import "../../mixins";
+
+.button {
+  @include buttonReset;
+
+  font-family: $ff-futura-bold;
+  font-size: $fs-pad;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  text-shadow: $global-shadow;
+  color: $white;
+  position: relative;
+  box-shadow: $global-shadow;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    border: 3px solid;
+    box-shadow: $global-shadow;
+  }
+
+  &--color {
+    &-red {
+      @include buttonColor($red);
+    }
+    &-green {
+      @include buttonColor($green);
+    }
+    &-light-red {
+      @include buttonColor($light-red)
+    }
+    &-light-green {
+      @include buttonColor($light-green)
+    }
+    &-yellow {
+      @include buttonColor($yellow)
+    }
+    &-blue {
+      @include buttonColor($blue)
+    }
+    &-purple {
+      @include buttonColor($purple)
+    }
+    &-light-blue {
+      @include buttonColor($light-blue)
+    }
+    &-pink {
+      @include buttonColor($pink)
+    }
+    &-light-purple {
+      @include buttonColor($light-purple)
+    }
+    &-orange {
+      @include buttonColor($orange)
+    }
+  }
+
+  &--type {
+    &-circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+
+      @media #{$not-small} {
+        height: 80px;
+        width: 80px;
+      }
+
+      &:after {
+        @include absoluteWithPadding(7px);
+        border-radius: 100%;
+      }
+    }
+
+    &-square {
+      width: 100%;
+      border-radius: $global-radius;
+
+      &:after {
+        @include absoluteWithPadding(10px);
+
+        border-radius: $global-radius;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+  }
+
+}

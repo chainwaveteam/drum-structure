@@ -2,11 +2,14 @@ import React from 'react'
 import { Howl } from 'howler'
 import PropTypes from 'prop-types'
 
-import { data } from '../../data'
+import { data } from '../data'
 
-export default function Player({ url, volume }) {
+// TODO : Add into pad
+// TODO : Use native html5 audio tag
+
+export default function Player({ url }) {
   const sounds = data.audios.map(src => {
-    const sound = new Howl({ src, volume })
+    const sound = new Howl({ src })
     return { src, sound }
   })
 

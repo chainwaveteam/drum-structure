@@ -1,0 +1,37 @@
+@import "variables";
+
+@mixin absoluteWithPadding($p) {
+  top: $p;
+  bottom: $p;
+  right: $p;
+  left: $p;
+  position: absolute;
+}
+
+@mixin buttonReset {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 0;
+}
+
+@mixin buttonColor($color) {
+  background-color: $color;
+  transition: background-color ease-in-out $fast;
+
+  &:after {
+    border-color: $color;
+    background-color: rgba($color, .75);
+  }
+
+  &.active {
+    background-color: darken($color, 25%);
+  }
+}
+
+@mixin flexCenterChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

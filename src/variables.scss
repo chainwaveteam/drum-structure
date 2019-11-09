@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Futura";
+  font-weight: 500;
+  src: url("./fonts/futura-medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  font-weight: 700;
+  src: url("./fonts/futura-bold.ttf") format('truetype');
+}
+
+$not-small: all and (min-width: 768px);
+
+$ff-futura: "Futura", sans-serif;
+$ff-futura-bold: "Futura Bold", sans-serif;
+
+$fs-body: 18px;
+$fs-pad: 25px;
+$fs-heading: 32px;
+
+$fw-body: 500;
+$fw-bold: 700;
+
+@media #{$not-small} {
+  $fs-body: 25px;
+  $fs-pad: 30px;
+  $fs-heading: 40px;
+}
+
+$global-radius: 30px;
+$global-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+/* Colors - buttons */
+$white: rgb(255, 255, 255);
+$black: rgb(33, 33, 33);
+$green: rgb(105, 240, 174);
+$red: rgb(239, 83, 80);
+
+/* Colors - buttons */
+$light-red: rgb(242, 124, 164);
+$light-green: rgb(100, 255, 218);
+$yellow: rgb(255, 241, 118);
+$blue: rgb(83, 109, 254);
+$purple: rgb(179, 136, 255);
+$light-blue: rgb(128, 216, 255);
+$pink: rgb(234, 128, 252);
+$light-purple: rgb(140, 158, 255);
+$orange: rgb(255, 138, 128);
+
+/* Variants */
+$opacityHover: .75;
+
+$testGreen: rgb(100, 255, 218);
+$testGreyGreen: rgb(72, 188, 160);
+
+/* Transitions */
+$fast: 200ms;
+$medium: 500ms;
+$slow: 1500ms;
