@@ -17,7 +17,7 @@ Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   onToggle: PropTypes.func.isRequired,
   checked: PropTypes.bool,
-  color: PropTypes.oneOf('red', 'green').isRequired
+  color: PropTypes.oneOf(['red', 'green']).isRequired
 }
 
 Checkbox.defaultProps = {

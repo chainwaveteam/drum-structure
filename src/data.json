@@ -31,7 +31,7 @@
       {
         "letter": "A",
         "code": 65,
-        "labels": ["Pad 1", "Gub Kick"],
+        "labels": ["Pad 1", "Gub-Kick"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Kick2.wav"
@@ -40,7 +40,7 @@
       {
         "letter": "S",
         "code": 83,
-        "labels": ["HH", "HH"],
+        "labels": ["HH", "HH Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV"
@@ -58,7 +58,7 @@
       {
         "letter": "Z",
         "code": 90,
-        "labels": ["Kick", "Kick"],
+        "labels": ["Kick", "Kick Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV"
@@ -67,7 +67,7 @@
       {
         "letter": "X",
         "code": 88,
-        "labels": ["Snare", "Snare"],
+        "labels": ["Snare", "Snare Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV"
@@ -76,7 +76,7 @@
       {
         "letter": "C",
         "code": 67,
-        "labels": ["OHat", "OHat"],
+        "labels": ["OHat", "OHat Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV"

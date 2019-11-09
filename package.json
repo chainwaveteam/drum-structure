@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "howler": "^2.1.2",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-use": "^13.5.0"
   },
   "devDependencies": {
     "eslint": "^6.1.0",

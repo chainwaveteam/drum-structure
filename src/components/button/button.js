@@ -5,7 +5,7 @@ import './button.scss'
 // TODO : Here we can see the limit of BEM with circle modifiers
 // TODO : Repeating props with button's parent like "color", "active", "onClick"
 
-export default function Button({ name, onClick, type, color, active }) {
+export default function Button({ name, onClick, type, color, active, children }) {
   const newClasses = [
     `button`,
     `button--type-${type}`,
@@ -15,6 +15,7 @@ export default function Button({ name, onClick, type, color, active }) {
   return (
     <button type="button" className={newClasses} onClick={onClick}>
       <span className="button__text">{name}</span>
+      {children}
     </button>
   )
 }

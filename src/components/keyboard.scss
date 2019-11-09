@@ -1,0 +1,20 @@
+@import "../variables";
+@import "../mixins";
+
+.keyboard {
+  @include flexCenterChild;
+
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+
+  &__pad {
+    /* Radio from design */
+    width: calc((100% * 145) / 510);
+    margin: calc((100% * 25) / 510 / 2);
+
+    &__audio {
+      display: none;
+    }
+  }
+}

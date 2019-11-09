@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Script from './freeCodeCamp'
+import Script from './components/freeCodeCamp'
 import App from './components/app/app'
 
 import * as serviceWorker from './serviceWorker'
