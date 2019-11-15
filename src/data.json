@@ -4,6 +4,7 @@
       {
         "letter": "Q",
         "code": 81,
+        "color": "light-red",
         "labels": ["Blast", "Chord 1"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/BLAST.wav",
@@ -13,6 +14,7 @@
       {
         "letter": "W",
         "code": 87,
+        "color": "light-green",
         "labels": ["Horn 1", "Chord 2"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN1.wav",
@@ -22,6 +24,7 @@
       {
         "letter": "E",
         "code": 69,
+        "color": "yellow",
         "labels": ["Horn 2", "Lick"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN2.wav",
@@ -31,6 +34,7 @@
       {
         "letter": "A",
         "code": 65,
+        "color": "blue",
         "labels": ["Pad 1", "Gub-Kick"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav",
@@ -40,6 +44,7 @@
       {
         "letter": "S",
         "code": 83,
+        "color": "purple",
         "labels": ["HH", "HH Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV",
@@ -49,6 +54,7 @@
       {
         "letter": "D",
         "code": 68,
+        "color": "light-blue",
         "labels": ["Pad 2", "Clap"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD2.wav",
@@ -58,6 +64,7 @@
       {
         "letter": "Z",
         "code": 90,
+        "color": "pink",
         "labels": ["Kick", "Kick Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV",
@@ -67,6 +74,7 @@
       {
         "letter": "X",
         "code": 88,
+        "color": "light-purple",
         "labels": ["Snare", "Snare Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV",
@@ -76,28 +84,13 @@
       {
         "letter": "C",
         "code": 67,
+        "color": "orange",
         "labels": ["OHat", "OHat Bis"],
         "sources": [
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV",
           "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV"
         ]
       }
-    ],
-    "audios": [
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/open.WAV",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/snare.WAV",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD2.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Clap%207Mile.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/closed.WAV",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/PAD1.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Kick2.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN2.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/lick.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/HORN1.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord2.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/BLAST.wav",
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord1.wav"
     ]
   }
 }

@@ -1,37 +1,43 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { useAudio } from 'react-use'
 import PropTypes from 'prop-types'
 
 import Button from '../button/button'
+import useKeyPress from '../../hooks/useKeyPress'
+import { context } from '../../context'
 
 // TODO : Colors duplicated
 
-export default function Pad({ l, color, bank, active, play, playing }) {
+export default function Pad({ l, color, toggleScreen }) {
   const { letter, sources, labels } = l
+  const { bank, power } = useContext(context)
+  const [active, setActive] = useState(false)
 
   const [audio, state, controls] = useAudio({
-    src: sources[bank],
+    src: power ? sources[bank] : '',
     id: letter.toUpperCase(),
     className: `keyboard__pad__audio clip`,
     children: labels[bank].toUpperCase()
   })
 
-  if (playing) {
-    if (!state.paused) {
-      controls.seek(0)
-    }
+  const play = () => {
+    controls.seek(0)
     controls.play()
+    toggleScreen()
+    setActive(true)
+    setTimeout(() => setActive(false), 200)
   }
+
+  useKeyPress(e => e.key === letter.toLowerCase() && play())
 
   return (
     <Button
-      key={letter}
       id={letter}
       type="square"
       name={letter}
       onClick={play}
-      active={active}
-      color={color}
+      active={power ? active : false}
+      color={l.color}
       className="drum-pad keyboard__pad"
     >
       {audio}
@@ -43,21 +49,8 @@ Pad.propTypes = {
   l: PropTypes.shape({
     letter: PropTypes.string,
     sources: PropTypes.arrayOf(PropTypes.string),
+    color: PropTypes.string.isRequired,
     labels: PropTypes.arrayOf(PropTypes.string)
   }).isRequired,
-  playing: PropTypes.bool.isRequired,
-  active: PropTypes.bool.isRequired,
-  bank: PropTypes.oneOf([0, 1]).isRequired,
-  color: PropTypes.oneOf([
-    'light-red',
-    'light-green',
-    'yellow',
-    'blue',
-    'purple',
-    'light-blue',
-    'pink',
-    'light-purple',
-    'orange'
-  ]).isRequired,
-  play: PropTypes.func.isRequired
+  toggleScreen: PropTypes.func.isRequired
 }
