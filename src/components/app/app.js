@@ -5,7 +5,7 @@ import './app.scss'
 import Checkbox from '../checkbox/checkbox'
 
 import { ContextConsumer } from '../../context'
-import Keyboard from '../Keyboard'
+import Keyboard from '../keyboard/Keyboard'
 
 function App() {
   const initialScreen = 'The Drum Machine'

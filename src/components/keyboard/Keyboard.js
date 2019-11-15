@@ -2,12 +2,12 @@ import React, { useState, useEffect, useContext } from 'react'
 
 import PropTypes from 'prop-types'
 
-import useKeyPress from '../hooks/useKeyPress'
+import useKeyPress from '../../hooks/useKeyPress'
 
 import './keyboard.scss'
 import Pad from './pad'
-import { data } from '../data'
-import { context } from '../context'
+import { data } from '../../data'
+import { context } from '../../context'
 
 // TODO : There are too many "useState"
 // TODO : IsPower don't work

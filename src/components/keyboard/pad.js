@@ -2,7 +2,7 @@ import React from 'react'
 import { useAudio } from 'react-use'
 import PropTypes from 'prop-types'
 
-import Button from './button/button'
+import Button from '../button/button'
 
 // TODO : Colors duplicated
 
