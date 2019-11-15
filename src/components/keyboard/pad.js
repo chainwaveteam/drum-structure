@@ -6,7 +6,7 @@ import Button from '../button/button'
 
 // TODO : Colors duplicated
 
-export default function Pad({ l, color, bank, active, play, animActive }) {
+export default function Pad({ l, color, bank, active, play, playing }) {
   const { letter, sources, labels } = l
 
   const [audio, state, controls] = useAudio({
@@ -16,7 +16,7 @@ export default function Pad({ l, color, bank, active, play, animActive }) {
     children: labels[bank].toUpperCase()
   })
 
-  if (active) {
+  if (playing) {
     if (!state.paused) {
       controls.seek(0)
     }
@@ -24,17 +24,18 @@ export default function Pad({ l, color, bank, active, play, animActive }) {
   }
 
   return (
-    <div key={letter} id={letter} className="keyboard__pad drum-pad">
-      <Button
-        type="square"
-        name={letter}
-        onClick={play}
-        active={animActive}
-        color={color}
-      >
-        {audio}
-      </Button>
-    </div>
+    <Button
+      key={letter}
+      id={letter}
+      type="square"
+      name={letter}
+      onClick={play}
+      active={active}
+      color={color}
+      className="drum-pad keyboard__pad"
+    >
+      {audio}
+    </Button>
   )
 }
 
@@ -44,8 +45,8 @@ Pad.propTypes = {
     sources: PropTypes.arrayOf(PropTypes.string),
     labels: PropTypes.arrayOf(PropTypes.string)
   }).isRequired,
+  playing: PropTypes.bool.isRequired,
   active: PropTypes.bool.isRequired,
-  animActive: PropTypes.bool.isRequired,
   bank: PropTypes.oneOf([0, 1]).isRequired,
   color: PropTypes.oneOf([
     'light-red',

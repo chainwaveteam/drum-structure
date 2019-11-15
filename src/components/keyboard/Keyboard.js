@@ -65,8 +65,8 @@ function Keyboard({ toggleDisplay }) {
           key={l.letter}
           l={l}
           color={colors[i]}
-          active={l.letter === letterActive}
-          animActive={l.letter === animActive}
+          playing={l.letter === letterActive}
+          active={l.letter === animActive}
           bank={bank ? 1 : 0}
           play={() => play(l)}
         />
